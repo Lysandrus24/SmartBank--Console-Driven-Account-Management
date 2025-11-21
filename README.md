@@ -1,0 +1,2 @@
+# SmartBank: Console-Driven Account Management
+ a Java-based banking system that allows users to manage their accounts directly through the console. It supports core operations such as creating accounts, depositing and withdrawing funds, checking balances, and viewing transaction histories. The system ensures secure and organized handling of user data using object-oriented programming principles. Designed for simplicity and efficiency, SmartBank provides an interactive and reliable banking experience without requiring a graphical interface.
