@@ -1,2 +1,18 @@
-# SmartBank: Console-Driven Account Management
- a Java-based banking system that allows users to manage their accounts directly through the console. It supports core operations such as creating accounts, depositing and withdrawing funds, checking balances, and viewing transaction histories. The system ensures secure and organized handling of user data using object-oriented programming principles. Designed for simplicity and efficiency, SmartBank provides an interactive and reliable banking experience without requiring a graphical interface.
+## Getting Started
+
+Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+
+## Folder Structure
+
+The workspace contains two folders by default, where:
+
+- `src`: the folder to maintain sources
+- `lib`: the folder to maintain dependencies
+
+Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+
+> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+
+## Dependency Management
+
+The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
