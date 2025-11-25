@@ -63,7 +63,9 @@ abstract class Account {
     }
 }
 
-// ===== SUBCLASS 1 =====
+
+// ===== INHERITANCE =====
+
 class SavingsAccount extends Account {
 
     public SavingsAccount(String accountNumber, String accountHolder, double balance) {
@@ -84,7 +86,9 @@ class SavingsAccount extends Account {
     }
 }
 
-// ===== SUBCLASS 2 =====
+
+// ===== INHERITANCE =====
+
 class StudentAccount extends Account {
 
     public StudentAccount(String accountNumber, String accountHolder, double balance) {
@@ -108,7 +112,7 @@ class StudentAccount extends Account {
     }
 }
 
-// ===== SUBCLASS 3 =====
+// ===== INHERITANCE =====
 class BusinessAccount extends Account {
 
     public BusinessAccount(String accountNumber, String accountHolder, double balance) {
