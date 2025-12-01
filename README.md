@@ -4,75 +4,80 @@
 **SmartBank: A Java Console-Based Banking Management System**
 
 ## 2. Description / Overview
-SmartBank is a console-based banking system developed using Java and Object-Oriented Programming (OOP) principles. It allows users to create different types of bank accounts, perform transactions such as deposit and withdrawal, and view transaction history. The system simulates real-world banking operations and solves the problem of managing multiple account holders in a simple, organized, and interactive way through the console.
+SmartBank is a console-based banking system developed using Java and Object-Oriented Programming (OOP) principles. It allows users to create different types of bank accounts, perform transactions such as deposit and withdrawal, and view transaction history. The system simulates real-world banking operations and manages multiple account holders in a simple, organized console environment.
 
 Main features include:
 - Multiple account types (Savings, Student, Business)
-- Secure transaction handling
-- Transaction history tracking
-- User input validation using exception handling
-- Console-based interaction
+-Secure transaction handling
+-Transaction history tracking
+-User input validation through exception handling
+-Fully console-based interface
 
 ## 3. OOP Concepts Applied
 
 ### a. Encapsulation
-Encapsulation is implemented by making class attributes `private` and providing controlled access through `getters` and `setters`.  
-Example: `accountNumber`, `accountHolder`, and `balance` are private and accessed using public getter methods.
+Encapsulation is implemented by declaring class attributes as private and exposing them through getter/setter methods.
+Example: accountNumber, accountHolder, and balance are private and accessed through public getters.
 
 ### b. Inheritance
-Inheritance is used by creating a base class `Account` and extending it into:
-- `SavingsAccount`
-- `StudentAccount`
-- `BusinessAccount`
-
-Each subclass inherits common properties and behaviors while implementing its own withdrawal rules.
+The base abstract class Account is extended by:
+-SavingsAccount
+-StudentAccount
+-BusinessAccount
+Each subclass inherits shared properties and implements its own withdrawal rules.
 
 ### c. Polymorphism
-Polymorphism is achieved by overriding the `withdraw()` method in each subclass.  
-The `SmartBank` system uses a superclass reference `Account` to call the overridden method dynamically based on the account type.
+Polymorphism is demonstrated through method overriding.
+Each subclass provides its own version of the withdraw() method.
+The SmartBank system calls acc.withdraw() using the Account reference, allowing dynamic method execution depending on the account type.
 
 ### d. Abstraction
-Abstraction is applied using the abstract class `Account` which contains an abstract method `withdraw()` that forces subclasses to implement their own version.
+Abstraction is applied through the Account abstract class, which contains the abstract method withdraw().
+This forces subclasses to implement their own rules.
 
 
 ## 4. Program Structure
 
 ### Main Classes:
-- **Account (Abstract Class)**  
-  Base class containing common attributes and methods for all account types.
+Main Classes
 
-- **SavingsAccount (Subclass)**  
-  Implements basic withdrawal rules.
+Account (Abstract Class) – Contains common fields and behaviors.
 
-- **StudentAccount (Subclass)**  
-  Adds withdrawal limit for student users.
+SavingsAccount – Standard rules for withdrawals.
 
-- **BusinessAccount (Subclass)**  
-  Includes service fee per withdrawal.
+StudentAccount – Allows withdrawals up to ₱2000 only.
 
-- **SmartBank (Main Class)**  
-  Handles user interaction, menus, and system operations.
+BusinessAccount – Charges an additional ₱50 service fee per withdrawal.
 
-### Simple Class Relationship:
+SmartBank – Main system containing menus, options, and application flow.
 
-          Account (Abstract)
-                |
-    --------------------------------
-    |               |               |
-
-SavingsAccount StudentAccount BusinessAccount
-|
-SmartBank (Main System)
+Class Diagram (Improved formatting)
+               Account (Abstract)
+                     |
+    -----------------------------------------
+    |                  |                    |
+SavingsAccount   StudentAccount     BusinessAccount
+                     |
+                SmartBank (Main System)
 
 ## 5. How to Run the Program
 
-Follow these steps using the command line:
+1.Save the files as:
+  -SmartBank.java
+  -Account.java
+  -SavingsAccount.java
+  -StudentAccount.java
+  -BusinessAccount.java
 
-1. Save your code as `SmartBank.java`
-2. Open Command Prompt or Terminal.
-3. Navigate to the folder where your file is saved.
-4. Compile the program:
-5. Make sure you have Java installed on your system.
+2.Open Command Prompt or Terminal.
+
+3.Navigate to the folder where the files are saved.
+
+4.Compile all Java files:
+  javac *.java
+5.Run the program:
+  java SmartBank
+6.Make sure Java (JDK) is already installed on your system.
 
 
 ## 6. Sample Output
@@ -156,4 +161,5 @@ I would like to express my gratitude to our Java Programming instructor for guid
 - Oracle Java Documentation
 - Java Programming Textbook and Lecture Materials
 - OOP Concepts References (GeeksforGeeks, W3Schools)
+
 
